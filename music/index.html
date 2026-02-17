@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>给最喜欢的海海 - 新年快乐(*^▽^*)</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <audio id="bg-music" src="music/music.mp3" loop preload="auto"></audio>
+    <audio id="btn-sound" src="music/click.mp3" preload="auto"></audio>
+    <audio id="start-sound" src="music/momoka.mp3" preload="auto"></audio>
+
+    <div class="music-icon" id="music-btn">🎵</div>
+
+    <link href="https://fonts.googleapis.com/css2?family=Creepster&family=Metal+Mania&display=swap" rel="stylesheet">
+
+    <audio id="scratch-sound" src="music/scratch.mp3" preload="auto"></audio>
+    <audio id="bubble-sound" src="music/click.mp3" preload="auto"></audio>
+    <audio id="firecracker-sound" src="music/explosion.mp3" preload="auto"></audio>
+
+    <div id="start-screen">
+        <div class="noise-overlay"></div>
+
+        <div class="start-card gothic-card">
+            <div class="live-icon">
+                <img src="images/guitar_icon.png" alt="Live Icon">
+            </div>
+
+            <div class="content">
+                <h1 id="typewriter-text"></h1>
+
+                <h2 class="sub-title">
+                    <span id="subtitle-text">欢迎登车</span><span class="cursor">|</span>
+                </h2>
+
+                <p class="fade-in-text">开往 2026 的「专属回忆号」已蓄势待发。<br>请坐好扶稳，然后我们出发！</p>
+
+                <div class="btn-wrapper">
+                    <button id="start-btn">检票进站 🐭✨</button>
+                    <img id="flying-squirrel" src="images/squirrel.png" alt="飞鼠">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide gothic-theme">
+                <div class="slide-content">
+                    <h2 class="gothic-title ani" swiper-animate-effect="animate__fadeInDown"
+                        swiper-animate-delay="0.5s">故事，从这里开始</h2>
+                    <div class="live-info ani" swiper-animate-effect="animate__fadeIn" swiper-animate-delay="1.0s">
+                        <span>📅 2024.10.27</span>
+                        <span style="margin-left: 10px;">📍 Mao LiveHouse</span>
+                    </div>
+                    <p class="intro-text ani" swiper-animate-effect="animate__fadeInLeft" swiper-animate-delay="1.5s">
+                        还记得我们第一次见面的时候吗？
+                    </p>
+                    <div class="photo-group ani" swiper-animate-effect="animate__zoomIn" swiper-animate-delay="2.5s">
+                        <img src="images/01_meet.jpg" alt="初识合照" class="photo-gothic">
+                    </div>
+                    <div class="text-group">
+                        <p class="ani" swiper-animate-effect="animate__fadeInUp" swiper-animate-delay="3.5s"
+                            style="margin-top: 20px;">
+                            那个时候的我们，<br>真的都特别、特别耀眼✨
+                        </p>
+                        <p class="ani" swiper-animate-effect="animate__fadeInUp" swiper-animate-delay="5.0s"
+                            style="margin-top: 15px; color: #007bff; font-weight: bold;">
+                            海海当时在聊天室主动找到我<br>一瞬间就抓住了我的视线
+                        </p>
+                        <p class="ani" swiper-animate-effect="animate__fadeInUp" swiper-animate-delay="7.0s"
+                            style="margin-top: 15px;">
+                            后来排队聊天的那一刻<br>我更确定你身上有藏不住的人格魅力...
+                        </p>
+                    </div>
+                    <div class="final-text ani" swiper-animate-effect="animate__pulse" swiper-animate-delay="9.5s">
+                        <p>于是惊叹：</p>
+                        <h3>原来那天遇见的海海<br>转眼间，已经在我身边这么久了！</h3>
+                    </div>
+                </div>
+                <div class="gothic-bg-overlay"></div>
+                <div class="arrow-up"></div>
+            </div>
+
+            <div class="swiper-slide blue-diary-theme timeline-slide">
+                <div class="timeline-wave-bg">
+                    <svg class="wave wave-1" viewBox="0 0 1200 80" preserveAspectRatio="none">
+                        <path d="M0,40 Q150,10 300,40 T600,40 T900,40 T1200,40" fill="none"
+                            stroke="rgba(33,150,243,0.35)" stroke-width="1.5" />
+                    </svg>
+                    <svg class="wave wave-2" viewBox="0 0 1200 80" preserveAspectRatio="none">
+                        <path d="M0,50 Q200,20 400,50 T800,50 T1200,50" fill="none" stroke="rgba(21,101,192,0.3)"
+                            stroke-width="1.2" />
+                    </svg>
+                    <svg class="wave wave-3" viewBox="0 0 1200 80" preserveAspectRatio="none">
+                        <path d="M0,30 Q300,55 600,30 T1200,30" fill="none" stroke="rgba(13,71,161,0.25)"
+                            stroke-width="1" />
+                    </svg>
+                    <svg class="wave wave-4" viewBox="0 0 1200 80" preserveAspectRatio="none">
+                        <path d="M0,60 Q250,35 500,60 T1000,60 T1200,60" fill="none" stroke="rgba(25,118,210,0.2)"
+                            stroke-width="1" />
+                    </svg>
+                </div>
+                <div class="slide-content" id="timeline-scroll-content">
+                    <div style="margin-top: 40px; margin-bottom: 20px;">
+                        <h2 class="diary-title" style="margin: 0;">和海海的每一次“第一次”</h2>
+                        <p class="diary-subtitle"
+                            style="font-size: 12px; color: #64b5f6; margin-top: 5px; animation: flash 2s infinite;">
+                            (✨点击气泡可以看那天的照片哦)</p>
+                    </div>
+                    <div class="timeline-box">
+                        <div class="center-line"></div>
+                        <div class="timeline-item left">
+                            <div class="bubble" data-img="02_play.jpg">第一次一起出来玩🎈</div>
+                        </div>
+                        <div class="timeline-item right">
+                            <div class="bubble" data-img="03_movie.jpg">第一次看电影🎬</div>
+                        </div>
+                        <div class="timeline-item left">
+                            <div class="bubble" data-img="04_dress.jpg">第一次一起打扮👗</div>
+                        </div>
+                        <div class="timeline-item right">
+                            <div class="bubble" data-img="05_study.jpg">一起学习📚</div>
+                        </div>
+                        <div class="timeline-item left">
+                            <div class="bubble" data-img="06_airport.jpg">第一次给海海接机✈️</div>
+                        </div>
+                        <div class="timeline-item right">
+                            <div class="bubble" data-img="07_birthday.jpg">第一次一起过生日🎂</div>
+                        </div>
+                        <div class="timeline-item left">
+                            <div class="bubble" data-img="08_tori.jpg">第一次跟海海吃烧鸟🍢</div>
+                        </div>
+                        <div class="timeline-item right">
+                            <div class="bubble" data-img="09_photo.jpg">第一次拍四格照📸</div>
+                        </div>
+                        <div class="timeline-item left">
+                            <div class="bubble" data-img="10_christmas.jpg">第一次一起过圣诞🎄</div>
+                        </div>
+                        <div class="timeline-item right">
+                            <div class="bubble" data-img="11_newyear_eve.jpg">第一次一起跨年🎆</div>
+                        </div>
+                        <div class="timeline-item center-big">
+                            <div class="bubble final" id="final-bubble">今天<br>第二次一起过年啦🧨</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="scroll-arrow scroll-arrow-down" id="timeline-arrow-down" title="滚动到底部">
+                    <span>↓</span>
+                </div>
+                <div class="scroll-arrow scroll-arrow-up" id="timeline-arrow-up" title="滚动到顶部">
+                    <span>↑</span>
+                </div>
+            </div>
+
+            <div class="swiper-slide strawberry-theme">
+                <div class="slide-content">
+                    <h2 class="strawberry-title ani" swiper-animate-effect="animate__bounceInDown">一些海海的闪耀时刻！✨</h2>
+
+                    <div class="moments-container">
+
+                        <div class="moment-row">
+                            <div class="img-box ani" swiper-animate-effect="animate__fadeInLeft">
+                                <img src="images/sweet1.jpg" alt="Moment 1" class="moment-img" data-img="sweet1.jpg">
+                            </div>
+                            <div class="text-box ani" swiper-animate-effect="animate__fadeInRight">
+                                <p>我最喜欢的其实是素颜坦诚的海海。
+                                    <br>每次看到你愿意敞开心扉，和我一起尽情畅玩，我都觉得无比开心与珍贵。
+                                    <br>毕竟海海平时真的太忙太累了，能这样安心依靠彼此的时刻，我都格外珍惜。💓
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="moment-row reverse">
+                            <div class="text-box ani" swiper-animate-effect="animate__fadeInLeft"
+                                swiper-animate-delay="0.5s">
+                                <p>还有为了生活认真努力、不停向前的海海！
+                                    <br>你对生活的热忱与积极，对独立的向往，对未来的期许，对当下的知足，
+                                    <br>全都化作了一颗颗明亮的星，既照亮着你自己，也温柔地照亮着我前行的路。🌅
+                                </p>
+                            </div>
+                            <div class="img-box ani" swiper-animate-effect="animate__fadeInRight"
+                                swiper-animate-delay="0.5s">
+                                <img src="images/sweet2.jpg" alt="Moment 2" class="moment-img" data-img="sweet2.jpg">
+                            </div>
+                        </div>
+
+                        <div class="moment-row">
+                            <div class="img-box ani" swiper-animate-effect="animate__fadeInLeft"
+                                swiper-animate-delay="1.0s">
+                                <img src="images/sweet3.jpg" alt="Moment 3" class="moment-img" data-img="sweet3.jpg">
+                            </div>
+                            <div class="text-box ani" swiper-animate-effect="animate__fadeInRight"
+                                swiper-animate-delay="1.0s">
+                                <p>海海身上独有的魅力，既有成熟知性的温柔，又有坦诚真挚的感性。
+                                    <br>你总是格外体谅我、包容我，教会我许多事，也愿意大胆地和我分享心底的情绪。
+                                    <br>海海总是说我带着滤镜，但正是因为海海的优秀，才能让海海在我心中的形象变得饱满。🧸
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="strawberry-scroll-arrow strawberry-arrow-down" id="strawberry-arrow-down" title="滚动到底部">
+                    <span>↓</span>
+                </div>
+                <div class="strawberry-scroll-arrow strawberry-arrow-up" id="strawberry-arrow-up" title="滚动到顶部">
+                    <span>↑</span>
+                </div>
+            </div>
+
+            <div class="swiper-slide devil-theme">
+
+                <div class="sticker-pos sticker-tl">
+                    <img src="images/sticker_tl.png" alt="贴纸1">
+                </div>
+                <div class="sticker-pos sticker-br">
+                    <img src="images/sticker_br.png" alt="贴纸2">
+                </div>
+
+                <div class="devil-container">
+
+                    <h2 class="devil-title ani" swiper-animate-effect="animate__fadeInDown">我眼中的海海 😈</h2>
+
+                    <div class="devil-card-group ani" swiper-animate-effect="animate__zoomIn"
+                        swiper-animate-delay="0.5s">
+
+                        <div class="devil-avatar" id="devil-avatar">
+                            <img src="images/avatar.jpg" alt="海海头像">
+                            <span class="avatar-tag">💜</span>
+                        </div>
+
+                        <div class="devil-text-box">
+                            <h3>To 海海：</h3>
+                            <p>
+                                初识时的海海于我而言，完全就是一只灵动耀眼的超级飞鼠，鲜活又耀眼！<br>
+                                可越是深入相处，我越能看见你丰富的多面：<br>
+                                是对朋友坦诚坦荡、自信从容的模样，<br>
+                                是对待工作认真专注、沉稳负责的态度，<br>
+                                是对生活满怀热忱、对家人温柔上心的细腻。<br>
+                                这每一面每一面，都让我深深喜欢。
+                                <br>
+                                当然我其中也尤其偏爱那个专注学习、从容演讲时闪闪发光的海海！<br>
+                                我马上就能奔赴向你的学校了，<br>
+                                往后岁月，我想见证更多、更耀眼的海海模样。⭐<br>
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="devil-bg-overlay"></div>
+            </div>
+
+            <audio id="firecracker-sound" src="music/explosion.mp3" preload="auto"></audio>
+            <audio id="pop-sound" src="music/pop.mp3" preload="auto"></audio>
+            <audio id="stone-sound" src="music/stone.mp3" preload="auto"></audio>
+
+            <div class="swiper-slide future-theme">
+                <div class="slide-content">
+
+                    <h2 class="future-title ani" swiper-animate-effect="animate__fadeInUp">
+                        「下一页，是<span class="highlight-us">我们</span>」
+                    </h2>
+
+                    <div class="scroll-group">
+                        <div class="scroll-item">
+                            <div class="scroll-header" onclick="toggleScroll(this)">
+                                <span>还想一起做的事 📜</span>
+                            </div>
+                            <div class="scroll-body">
+                                <p>一起去游乐园、一起建设更多更多的计划、一起在图书馆学习、还要拍很多很多海海的妻子，以及一起携手稳稳地向前踏步...</p>
+                            </div>
+                        </div>
+
+                        <div class="scroll-item">
+                            <div class="scroll-header" onclick="toggleScroll(this)">
+                                <span>想去的地方 🗺️</span>
+                            </div>
+                            <div class="scroll-body">
+                                <p>海海故乡的每一处风景、和广州佛山的每一处角落、还要探很多很多的店、拍更多更多的照片！</p>
+                            </div>
+                        </div>
+
+                        <div class="scroll-item">
+                            <div class="scroll-header" onclick="toggleScroll(this)">
+                                <span>一些新年小承诺 🤝</span>
+                            </div>
+                            <div class="scroll-body">
+                                <p>无论未来去往何方、历经何事，渲澪都会在海海身旁，耐心倾听，做海海真诚的倾听者与同行者！</p>
+                                <p>无论海海向前走得多远，渲澪都会紧紧相随，稳步成长，做海海踏实、坚定的同行人！</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="closing-text ani" swiper-animate-effect="animate__fadeInUp" swiper-animate-delay="0.5s">
+                        <p><strong>谢谢海海，照亮了我的过去。<br>新的一年，想和海海一起，把未来点亮。</strong></p>
+                    </div>
+
+                    <div class="voice-wrapper ani" swiper-animate-effect="animate__fadeInUp"
+                        swiper-animate-delay="1.0s">
+                        <div class="voice-avatar">
+                            <img src="images/avatar_me.jpg" alt="我的头像">
+                        </div>
+                        <div class="voice-bar" onclick="playVoiceMessage()">
+                            <!-- <div class="voice-icon"></div> -->
+                            <span class="voice-length">10"</span>
+                        </div>
+                        <audio id="voice-msg" src="music/voice.wav"></audio>
+                    </div>
+
+                    <div class="home-btn" id="go-home">
+                        <span>🏠 回到起点</span>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="lightbox-overlay">
+        <div class="lightbox-content">
+            <img id="lightbox-img" src="" alt="回忆照片">
+            <div class="lightbox-close">✕</div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
